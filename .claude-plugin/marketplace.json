@@ -1,0 +1,14 @@
+{
+  "name": "claude-session-bar",
+  "owner": {
+    "name": "Sourab Pareek"
+  },
+  "plugins": [
+    {
+      "name": "session-bar",
+      "source": "./",
+      "description": "A status band for Claude Code: starship prompt, model, context and usage limits."
+    }
+  ],
+  "description": "A status band for Claude Code: starship prompt, model, context and usage limits."
+}

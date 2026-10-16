@@ -1,0 +1,17 @@
+{
+  "name": "session-bar",
+  "version": "0.1.0",
+  "description": "A band above the Claude Code prompt: your starship prompt (or a built-in fallback), plus model, context and rate-limit usage.",
+  "author": { "name": "Sourab Pareek", "url": "https://github.com/sourabp" },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "prompt": {
+      "type": "string",
+      "title": "Prompt source",
+      "description": "auto: use starship if installed, else the built-in line. starship: starship only. builtin: never run starship.",
+      "default": "auto",
+      "options": ["auto", "starship", "builtin"]
+    }
+  }
+}
