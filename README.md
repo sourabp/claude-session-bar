@@ -3,7 +3,7 @@
 A Claude Code [mod](https://code.claude.com/docs/en/plugins/mods/overview) that draws a band above the prompt:
 
 ```
-~/…/tawuniya/service_migration on  main * via 🐍 v3.11.15 (analytics-sdk-python) on ☁️  (us-east-1)
+~/…/acme/payments-service on  main * via 🐍 v3.11.15 (payments-env) on ☁️  (us-east-1)
 claude-opus-5-5 · ctx 142k/1M 14% · 5h 23% ↻14:30 · 7d 41% ↻09:00
 ```
 
@@ -51,7 +51,10 @@ Starship reads your usual `~/.config/starship.toml`.
 ```
 claude --plugin-dir ./claude-session-bar
 claude plugin validate ./claude-session-bar
+claude plugin test ./claude-session-bar
 ```
+
+Tests live in `tests/` and run on every push and pull request through GitHub Actions (`.github/workflows/ci.yml`), plus weekly, to catch Claude Code releases that change the early-access mod API. They need no login or secrets.
 
 ## License
 
